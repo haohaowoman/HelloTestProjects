@@ -1,0 +1,27 @@
+﻿@model MvcMusicStore.Models.AddPhoneNumberViewModel
+
+@{
+    ViewBag.Title = "First";
+    Layout = "~/Views/Albums/ListStronglyTyped.cshtml";
+}
+
+<h2>First</h2>
+
+<div>
+    <h4>AddPhoneNumberViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

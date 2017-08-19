@@ -1,0 +1,18 @@
+﻿
+@using MvcMusicStore.Models
+
+@model IEnumerable<Album>
+
+@ViewBag.Title "AlbumList"
+
+<h2>@ViewBag.Title</h2>
+
+<p>This is a album list test.</p>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Title</li>
+    }
+    
+</ul>
